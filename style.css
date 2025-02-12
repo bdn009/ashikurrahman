@@ -1,0 +1,48 @@
+/* nav items animation */
+.navLink::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #ad8be4;
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  transition: width .4s;
+  display: flex;
+  justify-items: center;
+
+}
+.navLink:hover::after{
+  width: 70%;
+}
+.navLinkD::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #ad8be4;
+  position: absolute;
+  /* left: 0; */
+  bottom: 1px;
+  transition: width .4s;
+  display: flex;
+  justify-items: center;
+
+}
+.navLinkD:hover::after{
+  width: 50%;
+ 
+}
+.navLinkD:hover, .navLink:hover{
+  color: #ad8be4;
+  transition: .5s;
+}
+.customShadow{
+  box-shadow: 0px 0px 30px 0px #8e56e7a8;
+}
+/* imgae bg */
+.imgBg{
+
+border-radius: 431px;
+background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.00) 100%);
+
+}
