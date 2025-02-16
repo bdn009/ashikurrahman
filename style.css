@@ -46,3 +46,104 @@ border-radius: 431px;
 background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.00) 100%);
 
 }
+
+.staticText{
+  font-size: 50px;
+  margin-right: 20px;
+}
+.dynamicText{
+  overflow: hidden;
+  height: 90px;
+  line-height: 90px;
+}
+.dynamicText li{
+  position: relative;
+  top:-5px;
+  animation: slide 16s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -410px;
+  }
+  
+}
+.dynamicText li span{
+  font-size: 50px;
+ 
+}
+
+.dynamicText li span::after{
+  content: "";
+  position:absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: solid 4px white;
+  background-color: #11071F;
+  animation: typing 4s steps(10) infinite;
+}
+@keyframes typing {
+  100%{
+    left: 112%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .staticText{
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .dynamicText{
+    height: 40px;
+    line-height: 40px;
+    
+  }
+  .dynamicText li span{
+    font-size: 20px;
+   
+  }
+  @keyframes slide {
+    100%{
+      top:-170px;
+    }
+    
+  }
+}
+
+/* .dynamicText{
+  overflow: hidden;
+  height: 90px;
+  line-height: 90px;
+  
+}
+.dynamicText li {
+  position: relative;
+  top: 0;
+  animation: slide 16s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -400px;
+  }
+  
+}
+.dynamicText li span{
+  position: relative;
+  font-size: 50px;
+  
+}
+.dynamicText li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  background-color: #11071F;
+  border-left: solid 2px white;
+  animation: typing 4s steps(10) infinite;
+}
+@keyframes typing {
+  100%{
+    left: 100%;
+  }
+  
+} */
