@@ -59,7 +59,7 @@ background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.
 .dynamicText li{
   position: relative;
   top:-5px;
-  animation: slide 16s steps(4) infinite;
+  animation: slide 16s steps(3) infinite;
 }
 @keyframes slide {
   100%{
@@ -89,21 +89,21 @@ background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.
 }
 @media screen and (max-width: 576px) {
   .staticText{
-    font-size: 20px;
+    font-size: 30px;
     margin-right: 10px;
   }
   .dynamicText{
-    height: 40px;
-    line-height: 40px;
+    height: 60px;
+    line-height: 60px;
     
   }
   .dynamicText li span{
-    font-size: 20px;
+    font-size: 30px;
    
   }
   @keyframes slide {
     100%{
-      top:-170px;
+      top:-268px;
     }
     
   }
