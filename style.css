@@ -59,11 +59,11 @@ background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.
 .dynamicText li{
   position: relative;
   top:-5px;
-  animation: slide 16s steps(3) infinite;
+  animation: slide 12s steps(3) infinite;
 }
 @keyframes slide {
   100%{
-    top: -410px;
+    top: -310px;
   }
   
 }
@@ -101,9 +101,12 @@ background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.
     font-size: 30px;
    
   }
-  @keyframes slide {
+  .dynamicText li{
+    animation: slidesm 12s steps(3) infinite;
+  }
+  @keyframes slidesm {
     100%{
-      top:-268px;
+      top:-200px;
     }
     
   }
