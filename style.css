@@ -71,7 +71,6 @@ background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.
   background-image: url('image/Gradient.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 .cardImg {
   transition: transform 1s;
