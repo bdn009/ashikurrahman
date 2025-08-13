@@ -65,7 +65,7 @@ background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.
 .dynamicText li{
   position: relative;
   top:-5px;
-  animation: slide 8s steps(1) infinite;
+  animation: slide 10s steps(1) infinite;
 }
 .cardBg{
   background-image: url('image/Gradient.png');
